@@ -1,0 +1,23 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+        <ul class="social-media-list">
+          {% if site.wechat_username %}
+          <li>
+            {% include icon-weixin.html username=site.wechat_username %}
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+        </ul>
+
+    </div>
+
+  </div>
+
+</footer>
